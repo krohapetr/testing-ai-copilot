@@ -13,8 +13,8 @@ def load_nlp(model: str = "en_core_web_sm"):
         return spacy.load(model)
     except OSError as exc:
         raise RuntimeError(
-            "spaCy model 'en_core_web_sm' is not installed. "
-            "Install it with: python -m spacy download en_core_web_sm"
+            f"spaCy model '{model}' is not installed. "
+            f"Install it with: python -m spacy download {model}"
         ) from exc
 
 
