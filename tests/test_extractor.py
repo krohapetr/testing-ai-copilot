@@ -16,6 +16,7 @@ def test_extract_nouns_and_verbs_unique_sorted():
             _Token("run", "VERB"),
             _Token("Run", "VERB"),
             _Token("Alice", "PROPN"),
+            _Token("123", "NOUN", is_alpha=False),
             _Token("!", "PUNCT", is_alpha=False),
         ]
 
